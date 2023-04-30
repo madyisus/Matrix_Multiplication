@@ -34,7 +34,7 @@ int main(int argv, char* argc[]) {
   string column_names = "n,time[ms]\n";
   outfile << column_names;
 
-  i = 10, n_1 = 1, N = 1000, num_of_experiments = 4;
+  i = 10, n_1 = 1, N = 400, num_of_experiments = 4;
 
 // MEDICION DEL TIEMPO EN CADA ALGORITMO
   for(int n = n_1; n <= N; n += i){
