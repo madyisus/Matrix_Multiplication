@@ -1,16 +1,16 @@
 CC = g++
 CFLAGS = -std=c++14 -O2
 
-SRCS = main.cpp 			# Archivo a compilar
+SRCS = main.cpp# Archivo a compilar
 OBJS = $(SRCS:.cpp=.o)
 
-TEST_CASES_NUMBER := $(shell seq 1 7) # corresponde a los input que queremos utilizar
+TEST_CASES_NUMBER := $(shell seq 1 7)# corresponde a los input que queremos utilizar
 
-RANGE = 1 2 3					# indice de los algoritmos que queremos utilizar (definido en main.cpp)
+RANGE = 1 2 3# indice de los algoritmos que queremos utilizar (definido en main.cpp)
 
-INPUT_PREFIX := tests/input		# path a los input
+INPUT_PREFIX := tests/input# path a los input
 
-OUTPUT_PREFIX := outputs/output			# path de los archivos de salida
+OUTPUT_PREFIX := outputs/output# path de los archivos de salida
 
 all: program				# itera sobre los algoritmo y luegos sobre los input
 	for j in $(RANGE); do \
