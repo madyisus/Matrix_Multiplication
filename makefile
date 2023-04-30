@@ -16,7 +16,7 @@ all: program				# itera sobre los algoritmo y luegos sobre los input
 	for j in $(RANGE); do \
 		for i in $(TEST_CASES_NUMBER); do \
 			echo "./program --test $$j < $(INPUT_PREFIX)$$i.in > $(OUTPUT_PREFIX)$$j$$i.txt"; \
-			./program $$j --test < $(INPUT_PREFIX)$$i.in > $(OUTPUT_PREFIX)$$j$$i.txt; \
+			./program $$j --test < $(INPUT_PREFIX)$$i.in > output/$(OUTPUT_PREFIX)$$j$$i.txt; \
 		done; \
 		for i in $(TEST_CASES_NUMBER); do \
 			diff -q -bB -y $(OUTPUT_PREFIX)$$j$$i.txt tests/output$$i.out; \
