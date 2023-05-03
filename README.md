@@ -1,7 +1,7 @@
 # Matrix_Multiplication
 Proyecto de matrices para el curso de algoritmos y estructuras de datos.
 
-Todos los códigos utilizados para el proyecto se encuentran aquí.
+Todos los códigos utilizados para el proyecto se encuentran aquí. Tanto *main.cpp* como *Makefile* son codigos adaptados de la versión original entregada por Vicente Lermanda en las ayudantías del curso.
 
 Para ejecutar las pruebas con los input dados y algoritmos seleccionado simplemente correr make en la terminal estando en la raíz.
 
